@@ -16,8 +16,8 @@ namespace Proj2
 
         protected void btVerDV_Click(object sender, EventArgs e)
         {
-            string i = Convert.ToString(txtcpf);
-            txtDV.Text = GeradordoDigito.CPF(i);
+            string i = txtcpf.Text;
+            txtDV.Text = Convert.ToString(GeradordoDigito.CPF(i));
             
         }
     }
